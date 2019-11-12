@@ -9,13 +9,13 @@ int main(void) {
 	pi = (int*) 10000;
 	pd = (double*)10000;
 
-	printf("Αυ°΅ ΐό : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
+	printf("μ¦κ°€ μ „ : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
 	
 	pc++;
 	pi++;
 	pd++;
 
-	printf("Αυ°΅ ΘΔ : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
+	printf("μ¦κ°€ ν›„ : pc = %d, pi = %d, pd = %d\n", pc, pi, pd);
 
 	return 0;
 }
