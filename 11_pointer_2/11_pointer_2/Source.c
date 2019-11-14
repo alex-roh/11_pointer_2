@@ -2,19 +2,15 @@
 
 int main(void) {
 
-	char buffer[8];
-	double* pd;
-	int* pi;
+	int i = 100;
+	int* p = &i;
+	int** q = &p;
 
-	pd = (double*)buffer;
-	*pd = 3.14;
-	printf("%f\n", *(double*)buffer);
-
-	pi = (int*)buffer;
-	*pi = 123;
-	*(pi + 1) = 456;
-	printf("%d %d\n", *(int*)buffer, *((int*)buffer + 1));
+	*p = 200; // dereferencing
+	printf("i = %d, *p = %d, **q = %d\n", i, *p, **q);
+	
+	**q = 300;
+	printf("i = %d, *p = %d, **q = %d\n", i, *p, **q);
 
 	return 0;
-
 }
